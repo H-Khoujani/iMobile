@@ -1,0 +1,9 @@
+include ':app'
+rootProject.name = "iMobile"
+include ':BubbleTabbar'
+include ':CsnackBar'
+include ':KenBurnView'
+include ':ShapeOfView'
+include ':nobobutton'
+include ':YoYo'
+include ':MatchView'

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iMobile</string>
+    <string name="shops">فروشگاه ها</string>
+    <string name="your_shops">ذخیره شده</string>
+    <string name="phondex">فون دکس</string>
+    <string name="settings">تنظیمات</string>
+</resources>
