@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.9" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="iMobile.app" target="1.9" />
+      <module name="iMobile.BubbleTabbar" target="1.9" />
+      <module name="iMobile.CsnackBar" target="1.9" />
+      <module name="iMobile.KenBurnView" target="1.9" />
+      <module name="iMobile.MatchView" target="1.9" />
+      <module name="iMobile.nobobutton" target="1.9" />
+      <module name="iMobile.ShapeOfView" target="1.9" />
+      <module name="iMobile.YoYo" target="1.9" />
+    </bytecodeTargetLevel>
   </component>
 </project>

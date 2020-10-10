@@ -17,7 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import pando.iMobile.phondex.PhondexFragment;
+import pando.iMobile.phondex.BrandsPreview;
 import pando.iMobile.settings.SettingsFragment;
 import pando.iMobile.shop_regs.ShopsRegsFragment;
 import pando.iMobile.shops_map.ShopsMapFragment;
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         mFragmentList.add(new ShopsMapFragment());
                         break;
                     case 2:
-                        mFragmentList.add(new PhondexFragment());
+                        mFragmentList.add(new BrandsPreview());
                         break;
                     case 3:
                         mFragmentList.add(new SettingsFragment());
