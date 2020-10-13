@@ -6,3 +6,9 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
 }
+
+dependencies {
+    implementation files('libs/jsoup.jar')
+    implementation files('libs/gson.jar')
+    implementation files('libs/sqlite-jdbc.jar')
+}

@@ -1,5 +1,6 @@
 package pando.iMobile;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -19,7 +20,7 @@ import java.util.List;
 
 import pando.iMobile.phondex.BrandsPreview;
 import pando.iMobile.settings.SettingsFragment;
-import pando.iMobile.shop_regs.ShopsRegsFragment;
+import pando.iMobile.shop_saves.ShopsSavesFragment;
 import pando.iMobile.shops_map.ShopsMapFragment;
 import pando.iMobile.utils.views.CustomViewPager;
 
@@ -31,14 +32,17 @@ public class MainActivity extends AppCompatActivity {
     private int[] colors;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        getSupportActionBar().hide();
 
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
-        titles = new String[]{getString(R.string.your_shops),
+        titles = new String[]{
+                getString(R.string.your_shops),
                 getString(R.string.shops),
                 getString(R.string.phondex),
                 getString(R.string.settings)};
@@ -52,9 +56,10 @@ public class MainActivity extends AppCompatActivity {
             window.setStatusBarColor(Color.WHITE);
         }
 
-        getSupportActionBar().hide();
 
 
+        mFragmentList.add(new ShopsMapFragment());
+        mFragmentList.add(new SettingsFragment());
         CustomViewPager viewPager = findViewById(R.id.viewPager);
         FragmentStatePagerAdapter adapter = new FragmentStatePagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -75,18 +80,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()){
-                    case 0:
-                        mFragmentList.add(new ShopsRegsFragment());
-                        break;
-                    case 1:
-                        mFragmentList.add(new ShopsMapFragment());
-                        break;
-                    case 2:
-                        mFragmentList.add(new BrandsPreview());
-                        break;
-                    case 3:
-                        mFragmentList.add(new SettingsFragment());
-                        break;
+//                    case 0:
+//                        mFragmentList.add(new ShopsMapFragment());
+//                        break;
+//                    case 1:
+//                        mFragmentList.add(new ShopsSavesFragment());
+//                        break;
+//                    case 2:
+//                        mFragmentList.add(new BrandsPreview());
+//                        break;
+//                    case 3:
+//                        mFragmentList.add(new SettingsFragment());
+//                        break;
                 }
             }
 

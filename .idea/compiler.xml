@@ -7,7 +7,9 @@
       <module name="iMobile.CsnackBar" target="1.9" />
       <module name="iMobile.KenBurnView" target="1.9" />
       <module name="iMobile.MatchView" target="1.9" />
+      <module name="iMobile.MaterialDrawer" target="1.9" />
       <module name="iMobile.nobobutton" target="1.9" />
+      <module name="iMobile.RecycerBanner" target="1.9" />
       <module name="iMobile.ShapeOfView" target="1.9" />
       <module name="iMobile.YoYo" target="1.9" />
     </bytecodeTargetLevel>
